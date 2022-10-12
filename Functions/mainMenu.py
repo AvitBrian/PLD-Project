@@ -1,5 +1,8 @@
 import time
 from rich.console import Console
+from Functions import submitReport
+from Functions import requestFeedback
+from Functions import medicalHistory
 
 console = Console()
 
@@ -18,11 +21,11 @@ def mMenu():
         reply = int(input(">>"));
 
         if reply == 1:
-            print(str(reply) + "st Option was chosen.");
+            submitReport.printthis();
         elif reply == 2:
-            print(str(reply) + "nd Option was chosen.");
+            requestFeedback.printthis();
         elif reply == 3:
-            print(str(reply) + "rd Option was chosen.");
+            medicalHistory.printthis();
         elif reply == 4:
             console.print("Exiting...", style="Green");
             time.sleep(5);
