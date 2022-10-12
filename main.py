@@ -1,11 +1,11 @@
 import sys
-from mainMenu import *
+from Functions import mainMenu
 from rich.console import Console 
 
 console=Console()
 
 console.print("***********************************************************************************************************************");
 console.print("NobleCure");
-name= input ("Reply: ");
-console.print("Nice to meet you then ",name); 
-mMenu()
+name= input ("Name: ");
+console.print("Welcome ",name); 
+mainMenu.mMenu()
