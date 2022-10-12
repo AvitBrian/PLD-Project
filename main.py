@@ -1,3 +1,11 @@
-print("Hey there! what is your name?");
-name=input ("Reply: ");
-print("Nice to meet you then, "+ name); 
+import sys
+from mainMenu import *
+from rich.console import Console 
+
+console=Console()
+
+console.print("***********************************************************************************************************************");
+console.print("NobleCure");
+name= input ("Reply: ");
+console.print("Nice to meet you then ",name); 
+mMenu()
