@@ -1,8 +1,10 @@
 import sys
 import time
 from rich.console import Console
+from rich import print as rprint
 from Classes.Menu import Menu
 from Classes.Patient import Patient
+from Functions import progress_bar
 loop=0
 name=None
 age=None
@@ -13,23 +15,20 @@ m=Menu(option=choice);
 ########################################
 p.getName();
 p.getAge();
+progress_bar.loading();
 m.mMenu();
-
-
+##############Running####################
 a=1;
 
-
 while a>0:
-    
-    p.printName();
-    m.mMenu();
-    
     if m.option==4:
         print(p.name, "logged out"); 
-        break;       
-            
-    
+        break;
+    else:
+        p.printName();
+        m.mMenu();
+       
 a+=a;
-    
+
 
 
