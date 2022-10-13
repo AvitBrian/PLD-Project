@@ -8,23 +8,27 @@ name=None
 age=None
 choice=None
 ##############objects###################
-p=Patient(name=name, age=age)
+p=Patient(name=name, age=age);
 m=Menu(option=choice);
 ########################################
-p.getName()
+p.getName();
+p.getAge();
 m.mMenu();
-print(m.option);
 
-a=1
+
+a=1;
 
 
 while a>0:
+    
     p.printName();
-    if (m.option in range(4)):
-        m.mMenu();
-        print(m.option);
-    else:
-        break;
+    m.mMenu();
+    
+    if m.option==4:
+        print(p.name, "logged out"); 
+        break;       
+            
+    
 a+=a;
     
 

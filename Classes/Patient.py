@@ -15,6 +15,10 @@ class Patient:
         self.name=input("Name: ")
     def printName(self):
         print(self.name);
+    def getAge(self):
+        self.age=input("Age: ")
+    def printAge(self):
+        print(self.age);
         
        
     
