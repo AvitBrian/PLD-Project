@@ -16,7 +16,7 @@ class Patient:
     def getNameAndAge(self):
         name=self.name=input("Name: ");
         age=self.age=input("Age: ");
-        
+        #will add try and catch to make sure the errors are caught and printed to the terminal
         data= name ,  age;
         file = open('database.txt', 'a');
         file.write(str(data) +'\n');
