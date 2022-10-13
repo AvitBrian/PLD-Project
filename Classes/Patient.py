@@ -1,6 +1,8 @@
 import time
 from rich.console import Console
 
+name=""
+age=None
 
 console = Console()
 
@@ -13,14 +15,15 @@ class Patient:
         
     def getName(self):
         self.name=input("Name: ")
+        name=self.name;
     def printName(self):
         print(self.name);
     def getAge(self):
-        self.age=input("Age: ")
+        age=self.age=input("Age: ")
     def printAge(self):
         print(self.age);
         
-       
+p=Patient(name=name, age=age)
     
  
 

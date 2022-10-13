@@ -1,10 +1,12 @@
 import sys
 import time
+import datetime
 from rich.console import Console
 from rich import print as rprint
 from Classes.Menu import Menu
 from Classes.Patient import Patient
 from Functions import progress_bar
+today = datetime.date.today()
 loop=0
 name=None
 age=None
@@ -16,6 +18,7 @@ m=Menu(option=choice);
 p.getName();
 p.getAge();
 progress_bar.loading();
+print("Welcome "+p.name);
 m.mMenu();
 ##############Running####################
 a=1;
@@ -25,7 +28,10 @@ while a>0:
         print(p.name, "logged out"); 
         break;
     else:
+        print();
+        print (today.strftime('%d, %b %Y'))
         p.printName();
+        print();
         m.mMenu();
        
 a+=a;

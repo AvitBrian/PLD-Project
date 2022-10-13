@@ -25,15 +25,14 @@ class Menu:
     def mMenu(self):
         
        
-            print(" __________________________________________________")
-            print("|                                                  |")
+            print(" **************************************************")
             rprint("|                  [bold] NOBLE CURE [/]                    |")
-            print("|--------------------------------------------------|")
-            rprint("|      [1] Submit a Health report                  |")
-            rprint("|      [2] Request Health report feedback          |")
-            rprint("|      [3] Medical History                         |")
-            rprint("|      [4] Exit                                    |")
-            print("|__________________________________________________|")
+            print("--------------------------------------------------")
+            rprint("*      [1] Submit a Health report                  *")
+            rprint("*      [2] Request a Health report feedback        *")
+            rprint("*      [3] Medical History                         *")
+            rprint("*      [4] Exit                                    *")
+            print("****************************************************")
             self.option = int(input(">>  "))
 
             if self.option == 1:
