@@ -39,16 +39,20 @@ class Menu:
                 print("selected option"+ "[" + str(self.option) + "]");
                 time.sleep(1)
                 submitReport.printthis();
+                print("____________________________________________________")
                 
             elif self.option == 2:
                 print("selected option"+ "[" + str(self.option) + "]");
                 time.sleep(1)
                 requestFeedback.printthis()
+                print("____________________________________________________")
                 
             elif self.option == 3:
                 print("selected option"+ "[" + str(self.option) + "]");
                 time.sleep(1)
                 medicalHistory.printthis();
+                print("____________________________________________________")
+                
                 
             elif self.option == 4:
                 print("selected option"+ "[" + str(self.option) + "]");
