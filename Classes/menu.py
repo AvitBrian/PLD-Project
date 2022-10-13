@@ -1,5 +1,11 @@
 import time
 from rich.console import Console
+from rich import print as rprint
+from rich.progress import track
+from Functions import medicalHistory
+from Functions import requestFeedback
+from Functions import submitReport
+from Functions import progress_bar
 
 
 console = Console()
@@ -19,25 +25,43 @@ class Menu:
     def mMenu(self):
         
        
-            
-            print("Choose your option")
-            print("[1] Submit a Health report")
-            print("[2] Request Health report feedback")
-            print("[3] Medical History")
-            print("[4] Exit")
-            self.option = int(input(">>"))
+            print(" __________________________________________________")
+            print("|                                                  |")
+            rprint("|                  [bold] NOBLE CURE [/]                    |")
+            print("|--------------------------------------------------|")
+            rprint("|      [1] Submit a Health report                  |")
+            rprint("|      [2] Request Health report feedback          |")
+            rprint("|      [3] Medical History                         |")
+            rprint("|      [4] Exit                                    |")
+            print("|__________________________________________________|")
+            self.option = int(input(">>  "))
 
             if self.option == 1:
-                submitReport();
+                print("selected option"+ "[" + str(self.option) + "]");
+                time.sleep(1)
+                submitReport.printthis();
+                
             elif self.option == 2:
-                requestFeedback();
+                print("selected option"+ "[" + str(self.option) + "]");
+                time.sleep(1)
+                requestFeedback.printthis()
+                
             elif self.option == 3:
-                medicalHistory();
+                print("selected option"+ "[" + str(self.option) + "]");
+                time.sleep(1)
+                medicalHistory.printthis();
+                
             elif self.option == 4:
+                print("selected option"+ "[" + str(self.option) + "]");
+                time.sleep(1)
+                
                 console.print("Exiting...", style="Green")
-                time.sleep(3)
+                
+                
             else:
+                print("selected option"+ "[" + str(self.option) + "]");
                 console.print("Enter a valid choice", style="Red")
+                
     
     
     
@@ -47,12 +71,12 @@ class Menu:
 
 
 
-def medicalHistory():
-    print ("this is your history")
+# def medicalHistory():
+#     print ("this is your history")
     
-def requestFeedback():
-    print ("requested feedback!")
+# def requestFeedback():
+#     print ("requested feedback!")
 
-def submitReport():
-    print ("Submitted request!")
+# def submitReport():
+#     print ("Submitted request!")
  
