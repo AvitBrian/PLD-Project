@@ -1,11 +1,31 @@
 import sys
-from Functions import mainMenu
+import time
 from rich.console import Console
-a = 1
-console = Console()
+from Classes.Menu import Menu
+from Classes.Patient import Patient
+loop=0
+name=None
+age=None
+choice=None
+##############objects###################
+p=Patient(name=name, age=age)
+m=Menu(option=choice);
+########################################
+p.getName()
+m.mMenu();
+print(m.option);
 
-console.print("***********************************************************************************************************************")
-console.print("NobleCure")
-name = input("Name: ")
-console.print("Welcome ", name)
-mainMenu.mMenu()
+a=1
+
+
+while a>0:
+    p.printName();
+    if (m.option in range(4)):
+        m.mMenu();
+        print(m.option);
+    else:
+        break;
+a+=a;
+    
+
+

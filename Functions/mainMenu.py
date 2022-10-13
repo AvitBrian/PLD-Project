@@ -33,3 +33,5 @@ def mMenu():
         else:
             console.print("Enter a valid choice", style="Red");
     a += a
+def medicalHistory():
+    print ("this is your history")
