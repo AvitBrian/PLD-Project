@@ -15,8 +15,8 @@ choice=None
 p=Patient(name=name, age=age);
 m=Menu(option=choice);
 ########################################
-p.getName();
-p.getAge();
+p.getNameAndAge();
+
 progress_bar.loading();
 print("Welcome "+p.name);
 m.mMenu();

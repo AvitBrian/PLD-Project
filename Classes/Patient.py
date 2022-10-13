@@ -1,7 +1,7 @@
 import time
 from rich.console import Console
 
-name=""
+name="";
 age=None
 
 console = Console()
@@ -13,17 +13,19 @@ class Patient:
         self.name = name;
         self.age = age;
         
-    def getName(self):
-        self.name=input("Name: ")
-        name=self.name;
+    def getNameAndAge(self):
+        name=self.name=input("Name: ");
+        age=self.age=input("Age: ");
+        
+        data= name ,  age;
+        file = open('database.txt', 'a');
+        file.write(str(data) +'\n');
+        file.close();
+        
     def printName(self):
         print(self.name);
-    def getAge(self):
-        age=self.age=input("Age: ")
     def printAge(self):
         print(self.age);
         
 p=Patient(name=name, age=age)
-    
- 
 
