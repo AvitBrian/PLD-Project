@@ -1,2 +1,3 @@
-#PLD-Project
-Just run the run.sh file! and we'll be good to go :)
+## PLD-Project
+Just run the run.sh file! 
+and we'll be good to go :)
